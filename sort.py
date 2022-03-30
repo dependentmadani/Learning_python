@@ -1,5 +1,11 @@
-my_list = [8, 10, 6, 2, 4]
+# bubble sort algorithm
+my_list = []
 swapped = True
+num = int(input("Number of element to sort: "))
+
+for i in range(num):
+    val = float(input("Enter your list element: "))
+    my_list.append(val)
 
 while swapped:
     swapped = False
@@ -7,5 +13,6 @@ while swapped:
         if my_list[i] > my_list[i + 1]:
             swapped = True
             my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
-        
+
+print("\nSorted:")
 print(my_list)
